@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ff6a00;
+  --color-brand-magenta: #ff006e;
+  --color-brand-charcoal: #1a1a1a;
+  --color-brand-light-gray: #f2f2f2;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #1a1a1a;
+  }
+
+  .dark {
+    --background: #1a1a1a;
+    --foreground: #f2f2f2;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    @apply font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
