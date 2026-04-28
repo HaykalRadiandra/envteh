@@ -31,7 +31,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold flex items-center">
           <img
-            src="./src/assets/env.webp"
+            src="/public/env.webp"
             alt="Logo Environment Technology"
             className="h-10 md:h-12 md:mr-2"
           />
