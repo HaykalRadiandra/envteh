@@ -1,7 +1,7 @@
 {
   "name": "envteh",
   "private": true,
-  "homepage": "https://HaykalRadiandra.github.io/envteh",
+  "homepage": "https://haykalradiandra.github.io/envteh",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
