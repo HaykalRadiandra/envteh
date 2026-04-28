@@ -46,7 +46,7 @@ function App() {
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
       <main>
-        <Hero />
+        <Hero isDarkMode={isDarkMode} />
 
         {/* Suspense wrapper for lazy-loaded components */}
         <Suspense
