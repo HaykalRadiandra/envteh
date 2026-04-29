@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const Process = () => {
+const Process = ({ isDarkMode }) => {
   const steps = [
     { num: "01", title: "Discovery", desc: "We dive deep into your business requirements and project goals." },
     { num: "02", title: "Strategy", desc: "Creating a detailed roadmap and choosing the right technology stack." },
@@ -9,16 +9,23 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-24 bg-brand-charcoal text-white">
+    <section id="process" className={`py-24 ${isDarkMode ? "bg-brand-charcoal text-white" : "bg-white text-brand-charcoal"} transition-colors duration-300`}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Development <span className="text-brand-orange">Process</span>.</h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">A transparent and efficient approach to building great software.</p>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            Our Development <span className="text-brand-orange">Process</span>.
+          </motion.h2>
+          <p className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-2xl mx-auto`}>A transparent and efficient approach to building great software.</p>
         </div>
 
         <div className="relative">
           {/* Horizontal line (desktop) */}
-          <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-brand-orange/20 z-0" />
+          <div className={`hidden md:block absolute top-12 left-0 w-full h-0.5 ${isDarkMode ? "bg-brand-orange/20" : "bg-brand-orange/30"} z-0`} />
           
           <div className="grid md:grid-cols-4 gap-12 relative z-10">
             {steps.map((step, i) => (
@@ -34,7 +41,7 @@ const Process = () => {
                   {step.num}
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
-                <p className="text-gray-400">{step.desc}</p>
+                <p className={isDarkMode ? "text-gray-400" : "text-gray-600"}>{step.desc}</p>
               </motion.div>
             ))}
           </div>

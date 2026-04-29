@@ -14,7 +14,7 @@ const Hero = ({ isDarkMode }) => {
       <div className="absolute top-1/4 -left-20 w-72 h-72 bg-brand-orange/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl animate-pulse delay-700" />
 
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:items-start">
+      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 mb-7 lg:mb-0 lg:items-start">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}

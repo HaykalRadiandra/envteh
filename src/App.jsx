@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 // Lazy load sections below the fold for better performance
-const Trust = lazy(() => import("./components/Trust"));
 const Problem = lazy(() => import("./components/Problem"));
 const Solution = lazy(() => import("./components/Solution"));
 const About = lazy(() => import("./components/About"));
@@ -56,15 +55,14 @@ function App() {
             </div>
           }
         >
-          <Trust />
-          <Problem />
-          <Solution />
-          <About />
-          <Services />
+          <Problem isDarkMode={isDarkMode} />
+          <Solution isDarkMode={isDarkMode} />
+          <About isDarkMode={isDarkMode} />
+          <Services isDarkMode={isDarkMode} />
           <Portfolio />
-          <Process />
+          <Process isDarkMode={isDarkMode} />
           <Testimonials />
-          <FAQ />
+          <FAQ isDarkMode={isDarkMode} />
           <CTA />
         </Suspense>
       </main>
