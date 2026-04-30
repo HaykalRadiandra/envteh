@@ -1,33 +1,62 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const CTA = () => {
   return (
-    <section id="cta" className="py-24">
-      <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="bg-linear-to-r from-brand-orange to-brand-magenta rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl"
-        >
-          {/* Decorative shapes */}
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
+    <section
+      id="cta"
+      className=" relative p-6 md:p-10 bg-linear-to-r from-brand-orange to-brand-magenta"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="container mx-auto md:px-6 w-full overflow-hidden flex flex-col md:flex-row items-center justify-between"
+      >
+        <div className="absolute top-0 left-0 h-ful w-48 pointer-events-none opacity-30">
+          <div className="absolute top-4 left-4 w-8 h-8 bg-orange-200/50"></div>
+          <div className="absolute top-12 left-12 w-8 h-8 bg-orange-300"></div>
+          <div className="absolute top-20 left-4 w-6 h-6 bg-orange-100"></div>
+          <div className="absolute top-4 right-20 w-8 h-8 bg-orange-400"></div>
+          <div className="absolute top-28 left-14 w-8 h-8 bg-orange-400"></div>
+          <div className="absolute top-20 left-20 w-7 h-7 bg-orange-300"></div>
+        </div>
 
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-black mb-8">Ready to Build Your <span className="underline decoration-wavy decoration-white/30">Next Big Thing</span>?</h2>
-            <p className="text-xl text-white/80 mb-12">Join 100+ businesses that trust Envteh to deliver high-performance software solutions.</p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <button className="bg-white text-brand-orange hover:bg-brand-light-gray px-10 py-5 rounded-full font-black text-xl transition-all shadow-xl">
-                Let's Talk
-              </button>
-              <button className="bg-transparent border-2 border-white/50 hover:bg-white/10 px-10 py-5 rounded-full font-black text-xl transition-all">
-                Schedule a Call
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+        <div className="absolute top-0 right-0 h-full w-48 pointer-events-none opacity-30">
+          <div className="absolute bottom-20 right-20 w-8 h-8 bg-pink-300"></div>
+          <div className="absolute bottom-12 right-12 w-8 h-8 bg-pink-300/50"></div>
+          <div className="absolute bottom-4 right-20 w-8 h-8 bg-pink-400"></div>
+          <div className="absolute bottom-20 right-2 w-8 h-8 bg-pink-400/50"></div>
+          <div className="absolute bottom-4 right-4 w-8 h-8 bg-pink-300"></div>
+        </div>
+
+        {/* ========================================= */}
+        {/* 4. KONTEN TEKS (z-10 agar di atas kotak)  */}
+        {/* ========================================= */}
+        <div className="relative z-10 text-white mb-6 md:mb-0">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+            Siap punya website untuk bisnis Anda?
+          </h2>
+          <p className="text-white/90">
+            Yuk konsultasikan kebutuhan website Anda sekarang juga!
+          </p>
+        </div>
+
+        {/* ========================================= */}
+        {/* 5. GRUP TOMBOL                            */}
+        {/* ========================================= */}
+        <div className="relative z-10 flex flex-col sm:flex-row gap-4">
+          <button className="group px-6 py-3 bg-white text-pink-600 font-semibold rounded-lg shadow hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+            Konsultasi Gratis{" "}
+            <span className="text-xl group-hover:translate-x-2 group-hover:transform duration-300">
+              →
+            </span>
+          </button>
+
+          <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+            Mulai Sekarang
+          </button>
+        </div>
+      </motion.div>
     </section>
   );
 };

@@ -30,15 +30,15 @@ const Portfolio = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Success <span className="text-brand-magenta">Stories</span>.
+              Kisah Sukses <span className="text-brand-magenta">Kami</span>.
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-xl">
-              We take pride in delivering exceptional digital products for our
-              clients.
+              Kami bangga dapat menghadirkan produk digital yang luar biasa bagi
+              klien kami. clients.
             </p>
           </div>
           <button className="text-brand-magenta font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
-            View All Projects <span>→</span>
+            Lihat Semua Projek <span>→</span>
           </button>
         </div>
 

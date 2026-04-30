@@ -71,7 +71,7 @@ const Services = ({ isDarkMode }) => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            Paket Layanan yang{" "}
+            Paket yang Sudah{" "}
             <span className="bg-linear-to-r from-brand-orange to-brand-magenta bg-clip-text text-transparent">
               Tersedia
             </span>

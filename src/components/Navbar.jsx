@@ -15,10 +15,10 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Process", href: "#process" },
+    { name: "Tentang", href: "#about" },
+    { name: "Paket", href: "#services" },
+    { name: "Portofolio", href: "#portfolio" },
+    { name: "Proses", href: "#process" },
     { name: "FAQ", href: "#faq" },
   ];
 

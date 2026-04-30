@@ -28,7 +28,7 @@ const FAQ = ({ isDarkMode }) => {
     <section id="faq" className="py-24">
       <div className="container mx-auto px-6 max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          Frequently Asked <span className="text-brand-magenta">Questions</span>
+          Pertanyaan Sering <span className="text-brand-magenta">Diajukan</span>
           .
         </h2>
         <div className="space-y-4">

@@ -1,3 +1,4 @@
+import { Building, Clock, ClockAlert, Mail, MapPin, Phone } from "lucide-react";
 import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const socials = [
@@ -8,16 +9,18 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="py-20 bg-brand-light-gray dark:bg-brand-charcoal border-t border-gray-200 dark:border-gray-800">
+    <footer className="py-10 bg-brand-light-gray dark:bg-brand-charcoal border-t border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-20">
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-start gap-2 mb-4">
-              <img
-                className="h-16 relative -top-2.5"
-                src="/envteh/env.webp"
-                alt="Environtment Technology"
-              />
+        <div className="grid md:grid-cols-4 gap-12">
+          <div>
+            <div className="flex items-start mb-6">
+              <div className="relative w-26">
+                <img
+                  className="absolute h-24 w-24 -top-8 left-0"
+                  src="/envteh/env.webp"
+                  alt="Environtment Technology"
+                />
+              </div>
               <a
                 href="#"
                 className="text-3xl font-bold flex flex-col items-center"
@@ -35,7 +38,7 @@ const Footer = () => {
                 </p>
               </a>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-sm mb-8">
+            <p className="text-gray-400 text-lg max-w-sm mb-8">
               Memimpin dalam pengembangan perangkat lunak kustom dan
               transformasi digital. Membangun perangkat lunak berkualitas sejak
               2024.
@@ -55,14 +58,14 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-8 text-white">Navigation</h4>
-            <ul className="space-y-4 text-gray-600 dark:text-gray-400">
+            <h4 className="text-xl font-bold mb-4 text-white">Tautan Cepat</h4>
+            <ul className="space-y-2 text-gray-400">
               <li>
                 <a
                   href="#about"
                   className="hover:text-brand-orange transition-colors"
                 >
-                  About Us
+                  Tentang
                 </a>
               </li>
               <li>
@@ -70,7 +73,7 @@ const Footer = () => {
                   href="#services"
                   className="hover:text-brand-orange transition-colors"
                 >
-                  Services
+                  Paket
                 </a>
               </li>
               <li>
@@ -78,7 +81,7 @@ const Footer = () => {
                   href="#portfolio"
                   className="hover:text-brand-orange transition-colors"
                 >
-                  Portfolio
+                  Portofolio
                 </a>
               </li>
               <li>
@@ -86,24 +89,82 @@ const Footer = () => {
                   href="#process"
                   className="hover:text-brand-orange transition-colors"
                 >
-                  Our Process
+                  Proses
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-8 text-white">Contact</h4>
-            <ul className="space-y-4 text-gray-600 dark:text-gray-400">
-              <li>hello@envteh.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Tech Avenue, Silicon Valley, CA</li>
+            <h4 className="text-xl font-bold text-white mb-4">Contact</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <Phone width={18} />
+                  +62 082-1233-4567
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <Mail width={18} />
+                  envteh.group@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <Building width={18} />
+                  ENVTEH GROUP
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <MapPin width={18} />
+                  Semarang, Indonesia
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xl font-bold mb-4 text-white">
+              Jam Operasional
+            </h4>
+            <ul className="space-y-4 text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <ClockAlert width={18} />
+                  Senin - Sabtu (08:00 - 17:00)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-brand-orange transition-colors flex items-center gap-4"
+                >
+                  <ClockAlert width={18} />
+                  Minggu (Libur)
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-10 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500">
-          <p>© 2024 Envteh Software. All rights reserved.</p>
+        <div className="mt-14 pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400">
+          <p>© 2024 Envteh Group Software. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-brand-orange">
               Privacy Policy
