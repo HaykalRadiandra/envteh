@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Portfolio = () => {
+const Portfolio = ({ isDarkMode }) => {
   const projects = [
     {
       title: "Fintech App",
@@ -25,19 +25,18 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-18 md:py-24">
+    <section id="portfolio" className={`py-18 md:py-24 transition-colors duration-300 ${isDarkMode ? "bg-brand-charcoal text-white" : "bg-white text-brand-charcoal"}`}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Kisah Sukses <span className="text-brand-magenta">Kami</span>.
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-xl">
-              Kami bangga dapat menghadirkan produk digital yang luar biasa bagi
-              klien kami. clients.
+            <p className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-xl`}>
+              Kami bangga dapat menghadirkan produk digital yang luar biasa bagi klien kami.
             </p>
           </div>
-          <button className="text-brand-magenta font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+          <button className="text-brand-magenta font-bold flex items-center gap-2 hover:translate-x-2 transition-transform cursor-pointer">
             Lihat Semua Projek <span>→</span>
           </button>
         </div>

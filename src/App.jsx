@@ -9,7 +9,6 @@ const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
 const Process = lazy(() => import("./components/Process"));
-const Testimonials = lazy(() => import("./components/Testimonials"));
 const FAQ = lazy(() => import("./components/FAQ"));
 const CTA = lazy(() => import("./components/CTA"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -59,16 +58,15 @@ function App() {
           <Solution isDarkMode={isDarkMode} />
           <About isDarkMode={isDarkMode} />
           <Services isDarkMode={isDarkMode} />
-          <Portfolio />
+          <Portfolio isDarkMode={isDarkMode} />
           <Process isDarkMode={isDarkMode} />
-          <Testimonials />
           <FAQ isDarkMode={isDarkMode} />
-          <CTA />
+          <CTA isDarkMode={isDarkMode} />
         </Suspense>
       </main>
 
       <Suspense fallback={null}>
-        <Footer />
+        <Footer isDarkMode={isDarkMode} />
       </Suspense>
     </div>
   );

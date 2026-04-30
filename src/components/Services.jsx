@@ -158,11 +158,14 @@ const Services = ({ isDarkMode }) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className={`text-center mt-6 md:mt-14 text-sm md:text-base ${isDarkMode ? "text-gray-300" : "text-gray-600"} font-medium animate-pulse underline`}
+          className={`text-center mt-6 md:mt-14 md:text-base ${isDarkMode ? "text-gray-300" : "text-gray-600"} font-medium animate-pulse`}
         >
           <span className="text-red-500">*</span>Harga bisa berubah sesuai
           kebutuhan.{" "}
-          <a href="https://wa.link/gw6rq9" className="text-brand-magenta">
+          <a
+            href="https://wa.link/gw6rq9"
+            className="text-brand-magenta underline"
+          >
             Hubungi kami untuk informasi lebih lanjut.
           </a>
         </motion.p>

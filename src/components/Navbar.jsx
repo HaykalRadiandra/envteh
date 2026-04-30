@@ -19,7 +19,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     { name: "Paket", href: "#services" },
     { name: "Portofolio", href: "#portfolio" },
     { name: "Proses", href: "#process" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Pertanyaan", href: "#faq" },
   ];
 
   return (
@@ -64,7 +64,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
             href="#cta"
             className="bg-brand-orange hover:bg-brand-magenta text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105"
           >
-            Get Started
+            Mulai
           </a>
         </div>
 
@@ -107,7 +107,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                 onClick={() => setIsOpen(false)}
                 className="bg-brand-orange text-white px-6 py-3 rounded-xl font-bold text-center"
               >
-                Get Started
+                Mulai
               </a>
             </div>
           </motion.div>
