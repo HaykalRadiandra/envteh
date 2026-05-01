@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Rocket, Zap, BarChart3, Crown, Check } from "lucide-react";
+import { LinkButton } from "./Elements/Button";
 
 const Services = ({ isDarkMode }) => {
   const pricingPlans = [
     {
       name: "BASIC LITE",
       subtitle: "Cocok untuk pemula",
-      price: "400.000",
+      price: "300.000 - 600.000",
       icon: <Rocket className="w-12 h-12" />,
       features: [
         "1 Halaman",
@@ -19,7 +20,7 @@ const Services = ({ isDarkMode }) => {
     {
       name: "BASIC PRO",
       subtitle: "Paling banyak dipilih",
-      price: "600.000",
+      price: "700.000 - 1.000.000",
       icon: <Zap className="w-12 h-12" />,
       features: [
         "1 - 3 Halaman",
@@ -32,7 +33,7 @@ const Services = ({ isDarkMode }) => {
     {
       name: "STANDARD",
       subtitle: "Untuk bisnis berkembang",
-      price: "1.200.000",
+      price: "1.000.000 - 3.000.000",
       icon: <BarChart3 className="w-12 h-12" />,
       features: [
         "3 - 5 Halaman",
@@ -45,7 +46,7 @@ const Services = ({ isDarkMode }) => {
     {
       name: "PRO",
       subtitle: "Untuk bisnis profesional",
-      price: "2.000.000+",
+      price: "3.000.000+",
       icon: <Crown className="w-12 h-12" />,
       features: [
         "5+ Halaman",
@@ -125,7 +126,7 @@ const Services = ({ isDarkMode }) => {
 
               <div className="mb-8">
                 <span className="text-lg font-bold">Rp</span>
-                <span className="text-3xl font-extrabold ml-1">
+                <span className="text-xl md:text-2xl font-extrabold ml-1">
                   {plan.price}
                 </span>
               </div>
@@ -142,15 +143,24 @@ const Services = ({ isDarkMode }) => {
                 ))}
               </ul>
 
-              <button
-                className={`mt-auto w-full py-3 px-6 rounded-xl font-bold transition-all duration-300 shadow-md hover:shadow-lg ${
+              {/* <a
+                href="#"
+                className={`mt-auto w-full py-3 px-6 rounded-xl font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer ${
                   plan.recommended
                     ? "bg-linear-to-r from-brand-orange to-brand-magenta text-white hover:opacity-90 active:scale-95"
                     : "border border-brand-magenta text-brand-magenta hover:bg-brand-magenta hover:text-white active:scale-95"
                 }`}
               >
                 Pilih Paket
-              </button>
+              </a> */}
+              <LinkButton
+                href="https://wa.link/gw6rq9"
+                classone="mt-auto w-full bg-transparent bg-linear-to-r from-brand-orange to-brand-magenta hover:opacity-70"
+                classtwo={`${plan.recommended ? "bg-linear-to-r from-brand-orange to-brand-magenta text-white" : ""} ${isDarkMode ? "bg-brand-charcoal/50" : "bg-brand-light-gray"} transition-all duration-300 ease-out`}
+                padding="py-3 px-6"
+              >
+                Pilih Paket
+              </LinkButton>
             </motion.div>
           ))}
         </div>

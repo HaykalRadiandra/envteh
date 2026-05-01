@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { AlarmClock, BadgeCheck, ThumbsUp } from "lucide-react";
+import { LinkButton } from "./Elements/Button";
 
 const Hero = ({ isDarkMode }) => {
   const trust = [
@@ -10,9 +11,8 @@ const Hero = ({ isDarkMode }) => {
 
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-10 overflow-hidden">
-      {/* Background Orbs */}
-      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-brand-orange/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl animate-pulse delay-700" />
+      <div className="-z-10 absolute top-1/4 -left-20 w-72 h-72 bg-brand-orange/20 rounded-full blur-3xl animate-pulse" />
+      <div className="-z-10 absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl animate-pulse delay-700" />
 
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 mb-7 lg:mb-0 lg:items-start">
         <motion.div
@@ -32,18 +32,24 @@ const Hero = ({ isDarkMode }) => {
             meningkatkan kepercayaan pelanggan.
           </p>
           <div className="flex flex-wrap gap-4 text-center">
-            <a
-              href="#contact"
-              className="w-full sm:w-auto bg-linear-to-r from-brand-orange via-brand-magenta to-brand-orange bg-size-[200%_100%] bg-left hover:bg-right transition-all duration-300 hover:scale-105 active:scale-95 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-brand-orange/20 cursor-pointer"
+            <LinkButton
+              href="https://wa.link/gw6rq9"
+              classtwo="gap-2 font-bold text-lg group"
+              padding="py-3 px-10 text-white"
             >
-              Konsultasi Gratis
-            </a>
-            <a
+              Konsultasi Gratis{" "}
+              <span className="group-hover:translate-x-2 transition-transform duration-300 ease-out">
+                →
+              </span>
+            </LinkButton>
+            <LinkButton
               href="#services"
-              className="w-full sm:w-auto inline-block text-center cursor-pointer border-2 dark:border-brand-charcoal border-brand-light-gray px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-charcoal hover:text-white dark:hover:bg-brand-light-gray dark:hover:text-brand-charcoal transition-all hover:scale-105 active:scale-95"
+              classone={`bg-transparent border-2 ${isDarkMode ? "text-white border-white" : "text-brand-charcoal border-brand-charcoal"} hover:scale-105 active:scale-95`}
+              classtwo="gap-2 font-bold text-lg bg-transparent"
+              padding="py-3 px-10"
             >
-              Lihat Paket
-            </a>
+              Lihat Paket{" "}
+            </LinkButton>
           </div>
           <div className="grid grid-cols-3 mt-16 mb-10">
             {trust.map((item, i) => {

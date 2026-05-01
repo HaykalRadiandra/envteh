@@ -7,20 +7,20 @@ const FAQ = ({ isDarkMode }) => {
 
   const faqs = [
     {
-      q: "How long does a typical project take?",
-      a: "Project timelines vary depending on complexity. A simple landing page can take 2-4 weeks, while complex enterprise platforms can take 3-6 months.",
+      q: "Berapa lama biasanya sebuah proyek diselesaikan?",
+      a: "Waktu pengerjaan proyek bervariasi tergantung pada tingkat kerumitannya. Sebuah landing page sederhana bisa memakan waktu 2-4 minggu, sementara platform perusahaan yang kompleks bisa memakan waktu 3-6 bulan.",
     },
     {
-      q: "What technologies do you specialize in?",
-      a: "We specialize in modern web and mobile stacks, including React, Next.js, Node.js, Flutter, and Cloud infrastructure (AWS/GCP).",
+      q: "Teknologi apa saja yang menjadi keahlian Anda?",
+      a: "Kami berspesialisasi dalam teknologi web dan mobile modern, termasuk React, Next.js, Node.js, Flutter, dan infrastruktur Cloud (AWS/GCP).",
     },
     {
-      q: "Do you offer post-launch support?",
-      a: "Yes, we provide various maintenance and support packages to ensure your software stays up-to-date and secure.",
+      q: "Apakah Anda menyediakan layanan dukungan pasca-peluncuran?",
+      a: "Ya, kami menyediakan berbagai paket pemeliharaan (maintenance) dan dukungan untuk memastikan perangkat lunak Anda tetap mutakhir dan aman.",
     },
     {
-      q: "Can you work with our existing team?",
-      a: "Absolutely. We often augment existing teams to provide specialized expertise or accelerate development cycles.",
+      q: "Dapatkah Anda bekerja sama dengan tim kami yang sudah ada?",
+      a: "Tentu saja. Kami sering kali bergabung dengan tim yang sudah ada untuk memberikan keahlian khusus atau mempercepat siklus pengembangan.",
     },
   ];
 

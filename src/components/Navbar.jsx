@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { LinkButton } from "./Elements/Button";
 
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,12 +61,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <a
-            href="#cta"
-            className="bg-brand-orange hover:bg-brand-magenta text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105"
-          >
-            Mulai
-          </a>
+          <LinkButton href="#cta" padding={`px-14 py-2 text-white`} />
         </div>
 
         {/* Mobile Toggle */}

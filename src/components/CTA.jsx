@@ -41,20 +41,23 @@ const CTA = () => {
           </p>
         </div>
 
-        {/* ========================================= */}
-        {/* 5. GRUP TOMBOL                            */}
-        {/* ========================================= */}
         <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-          <button className="group px-6 py-3 bg-white text-pink-600 font-semibold rounded-lg shadow hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+          <a
+            href="https://wa.link/gw6rq9"
+            className="active:scale-95 transition-all duration-300 ease-in-out group px-6 py-3 bg-white text-pink-600 font-semibold rounded-lg shadow hover:bg-gray-50 flex items-center justify-center gap-2"
+          >
             Konsultasi Gratis{" "}
             <span className="text-xl group-hover:translate-x-2 group-hover:transform duration-300">
               →
             </span>
-          </button>
+          </a>
 
-          <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+          <a
+            href="https://wa.link/gw6rq9"
+            className="active:scale-95 transition-all duration-300 ease-in-out px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10"
+          >
             Mulai Sekarang
-          </button>
+          </a>
         </div>
       </motion.div>
     </section>
