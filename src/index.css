@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tailwind-scrollbar-hide/v4";
+@plugin 'tailwind-scrollbar';
 
 @theme {
   --color-brand-orange: #ff6a00;

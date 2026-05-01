@@ -123,7 +123,7 @@ const Process = ({ isDarkMode }) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`p-10 rounded-[2rem] ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"}`}
+            className={`p-10 rounded-4xl ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"}`}
           >
             <h3 className="text-2xl font-bold mb-10 text-center lg:text-left">
               Proses Pengerjaan
@@ -131,7 +131,7 @@ const Process = ({ isDarkMode }) => {
             <div className="space-y-8">
               {processSteps.map((step) => (
                 <div key={step.id} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center font-bold text-sm">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center font-bold text-sm">
                     {step.id}
                   </div>
                   <div>
@@ -155,7 +155,7 @@ const Process = ({ isDarkMode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className={`p-10 rounded-[2rem] ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"}`}
+            className={`p-10 rounded-4xl ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"}`}
           >
             <h3 className="text-2xl font-bold mb-10 text-center lg:text-left">
               Keunggulan ENVTEH
@@ -163,7 +163,7 @@ const Process = ({ isDarkMode }) => {
             <div className="space-y-8">
               {advantages.map((item, index) => (
                 <div key={index} className="flex items-start gap-5">
-                  <div className="flex-shrink-0 mt-0.5">{item.icon}</div>
+                  <div className="shrink-0 mt-0.5">{item.icon}</div>
                   <div>
                     <h4 className="font-bold text-lg leading-none mb-1">
                       {item.title}
@@ -185,7 +185,7 @@ const Process = ({ isDarkMode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className={`p-10 rounded-[2rem] ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"} flex flex-col`}
+            className={`p-10 rounded-4xl ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"} flex flex-col`}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
             onTouchStart={() => setIsPaused(true)}
@@ -195,7 +195,7 @@ const Process = ({ isDarkMode }) => {
               Testimoni
             </h3>
 
-            <div className="relative flex-grow flex flex-col justify-center overflow-hidden min-h-[250px]">
+            <div className="relative grow flex flex-col justify-center overflow-hidden min-h-62.5">
               <div className="absolute top-0 left-0">
                 <Quote className="w-12 h-12 text-red-500 opacity-20 transform scale-x-[-1]" />
               </div>
