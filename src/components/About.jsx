@@ -65,18 +65,17 @@ const About = ({ isDarkMode }) => {
           <p
             className={`text-lg ${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-8 leading-relaxed`}
           >
-            Didirikan pada tahun 2026, Envteh dengan cepat menjadi pemimpin
-            dalam pengembangan perangkat lunak kustom. Kami adalah tim yang
-            terdiri dari para insinyur, desainer, dan ahli strategi visioner
-            yang berdedikasi untuk mendorong batas-batas kemungkinan di dunia
-            digital.
+            Didirikan pada 11 Maret 2026, Envteh adalah inisiatif pengembangan
+            solusi digital yang berfokus pada pembuatan website dan kebutuhan
+            digital bisnis. Kami merupakan tim kecil yang terus berkembang,
+            menggabungkan kemampuan teknologi dan pemahaman bisnis untuk
+            membantu klien memiliki kehadiran digital yang lebih profesional.
           </p>
           <p
             className={`text-lg ${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-8 leading-relaxed`}
           >
-            Misi kami sederhana: memberdayakan bisnis dengan menyediakan
-            alat-alat teknologi yang mereka butuhkan untuk sukses di pasar yang
-            berkembang pesat.
+            Misi kami sederhana: membantu bisnis berkembang melalui solusi
+            digital yang tepat, efektif, dan relevan.
           </p>
           <div className="grid grid-cols-2 gap-8">
             {/* Box 1: Projects */}
