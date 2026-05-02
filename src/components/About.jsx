@@ -81,9 +81,9 @@ const About = ({ isDarkMode }) => {
             {/* Box 1: Projects */}
             <div>
               <p className="text-4xl font-bold text-brand-orange mb-2">
-                <Counter target={10} />+
+                <Counter target={5} />+
               </p>
-              <p className="text-gray-500 font-medium">Projects Delivered</p>
+              <p className="text-gray-500 font-medium">Projects Experience</p>
             </div>
 
             {/* Box 2: Expert */}
@@ -91,7 +91,7 @@ const About = ({ isDarkMode }) => {
               <p className="text-4xl font-bold text-brand-magenta mb-2">
                 <Counter target={1} />+
               </p>
-              <p className="text-gray-500 font-medium">Expert Developers</p>
+              <p className="text-gray-500 font-medium">Developers</p>
             </div>
           </div>
         </motion.div>
