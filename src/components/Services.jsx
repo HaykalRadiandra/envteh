@@ -147,6 +147,8 @@ const Services = ({ isDarkMode }) => {
 
               <LinkButton
                 href={textMessage(plan.name)}
+                target={"_blank"}
+                rel={"noopener noreferrer"}
                 classone="mt-auto w-full bg-transparent bg-linear-to-r from-brand-orange to-brand-magenta hover:opacity-70"
                 classtwo={`${plan.recommended ? "bg-linear-to-r from-brand-orange to-brand-magenta text-white" : ""} ${isDarkMode ? "bg-brand-charcoal/50" : "bg-brand-light-gray"} transition-all duration-300 ease-out`}
                 padding="py-3 px-6"

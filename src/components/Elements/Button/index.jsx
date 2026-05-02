@@ -12,10 +12,14 @@ export function LinkButton({
   classtwo = "bg-linear-to-r from-brand-orange to-brand-magenta",
   padding = "px-14 py-2",
   href = "#",
+  target,
+  rel,
 }) {
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       className={`
         p-0.5 rounded-xl ${classone}
         transition-all duration-300 ease-out

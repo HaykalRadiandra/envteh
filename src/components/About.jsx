@@ -65,7 +65,7 @@ const About = ({ isDarkMode }) => {
           <p
             className={`text-lg ${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-8 leading-relaxed`}
           >
-            Didirikan pada tahun 2024, Envteh dengan cepat menjadi pemimpin
+            Didirikan pada tahun 2026, Envteh dengan cepat menjadi pemimpin
             dalam pengembangan perangkat lunak kustom. Kami adalah tim yang
             terdiri dari para insinyur, desainer, dan ahli strategi visioner
             yang berdedikasi untuk mendorong batas-batas kemungkinan di dunia

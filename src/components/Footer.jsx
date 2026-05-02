@@ -9,7 +9,9 @@ const socials = [
 
 const Footer = ({ isDarkMode }) => {
   return (
-    <footer className={`py-10 transition-colors duration-300 ${isDarkMode ? "bg-brand-charcoal border-t border-gray-800 text-white" : "bg-brand-light-gray border-t border-gray-200 text-brand-charcoal"}`}>
+    <footer
+      className={`py-10 transition-colors duration-300 ${isDarkMode ? "bg-brand-charcoal border-t border-gray-800 text-white" : "bg-brand-light-gray border-t border-gray-200 text-brand-charcoal"}`}
+    >
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12">
           <div>
@@ -27,18 +29,34 @@ const Footer = ({ isDarkMode }) => {
               >
                 <div className="w-full">
                   {" "}
-                  <span className={isDarkMode ? "text-white" : "text-brand-charcoal"}>ENV</span>
+                  <span
+                    className={
+                      isDarkMode ? "text-white" : "text-brand-charcoal"
+                    }
+                  >
+                    ENV
+                  </span>
                   <span className="bg-linear-to-r from-brand-orange to-brand-magenta bg-clip-text text-transparent">
                     TEH
                   </span>
-                  <span className={isDarkMode ? "text-white" : "text-brand-charcoal"}>.</span>
+                  <span
+                    className={
+                      isDarkMode ? "text-white" : "text-brand-charcoal"
+                    }
+                  >
+                    .
+                  </span>
                 </div>
-                <p className={`${isDarkMode ? "text-white" : "text-brand-charcoal"} text-[10px] uppercase`}>
+                <p
+                  className={`${isDarkMode ? "text-white" : "text-brand-charcoal"} text-[10px] uppercase`}
+                >
                   environment technology
                 </p>
               </a>
             </div>
-            <p className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg max-w-sm mb-8`}>
+            <p
+              className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg max-w-sm mb-8`}
+            >
               Memimpin dalam pengembangan perangkat lunak kustom dan
               transformasi digital. Membangun perangkat lunak berkualitas sejak
               2024.
@@ -58,8 +76,14 @@ const Footer = ({ isDarkMode }) => {
           </div>
 
           <div>
-            <h4 className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}>Tautan Cepat</h4>
-            <ul className={`space-y-2 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+            <h4
+              className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}
+            >
+              Tautan Cepat
+            </h4>
+            <ul
+              className={`space-y-2 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
+            >
               <li>
                 <a
                   href="#about"
@@ -96,15 +120,21 @@ const Footer = ({ isDarkMode }) => {
           </div>
 
           <div>
-            <h4 className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}>Contact</h4>
-            <ul className={`space-y-2 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+            <h4
+              className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}
+            >
+              Contact
+            </h4>
+            <ul
+              className={`space-y-2 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
+            >
               <li>
                 <a
                   href="#"
                   className="hover:text-brand-orange transition-colors flex items-center gap-4"
                 >
                   <Phone width={18} className="text-brand-orange" />
-                  +62 082-1233-4567
+                  +62 895-363-616-395
                 </a>
               </li>
               <li>
@@ -137,10 +167,14 @@ const Footer = ({ isDarkMode }) => {
             </ul>
           </div>
           <div>
-            <h4 className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}>
+            <h4
+              className={`text-xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-brand-charcoal"}`}
+            >
               Jam Operasional
             </h4>
-            <ul className={`space-y-4 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+            <ul
+              className={`space-y-4 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
+            >
               <li>
                 <a
                   href="#"
@@ -163,8 +197,10 @@ const Footer = ({ isDarkMode }) => {
           </div>
         </div>
 
-        <div className={`mt-14 pt-10 border-t ${isDarkMode ? "border-gray-800" : "border-gray-200"} flex flex-col md:flex-row justify-between items-center gap-6 ${isDarkMode ? "text-gray-500" : "text-gray-500"}`}>
-          <p>© 2024 Envteh Group Software. All rights reserved.</p>
+        <div
+          className={`mt-14 pt-10 border-t ${isDarkMode ? "border-gray-800" : "border-gray-200"} flex flex-col md:flex-row justify-between items-center gap-6 ${isDarkMode ? "text-gray-500" : "text-gray-500"}`}
+        >
+          <p>© 2026 Envteh Group Software. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-brand-orange transition-colors">
               Privacy Policy

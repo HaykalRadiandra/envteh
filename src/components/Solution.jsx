@@ -4,23 +4,23 @@ import { CheckCircle2, Zap, Shield, Rocket } from "lucide-react";
 const Solution = ({ isDarkMode }) => {
   const solutions = [
     {
-      title: "Web Development",
-      desc: "We use the latest technologies like React, Node.js, and Cloud-native architectures.",
+      title: "Pengembangan Web",
+      desc: "Kami menggunakan teknologi terbaru seperti React, Node.js, dan arsitektur Cloud-native.",
       icon: <Zap />,
     },
     {
-      title: "Mobile Applications",
-      desc: "Systems built to handle millions of users without breaking a sweat.",
+      title: "Aplikasi Mobile",
+      desc: "Sistem yang dibangun untuk menangani jutaan pengguna tanpa kendala.",
       icon: <Rocket />,
     },
     {
-      title: "UI/UX Design",
-      desc: "Built-in security at every layer of the application development lifecycle.",
+      title: "Desain UI/UX",
+      desc: "Keamanan bawaan di setiap lapisan siklus hidup pengembangan aplikasi.",
       icon: <Shield />,
     },
     {
-      title: "Maintenace and Support",
-      desc: "Rapid deployment cycles to get your features to market faster.",
+      title: "Pemeliharaan dan Dukungan",
+      desc: "Siklus deployment yang cepat untuk menghadirkan fitur Anda ke pasar dengan lebih cepat.",
       icon: <CheckCircle2 />,
     },
   ];
