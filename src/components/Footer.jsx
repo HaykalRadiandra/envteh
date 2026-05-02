@@ -180,7 +180,7 @@ const Footer = ({ isDarkMode }) => {
                   href="#"
                   className="hover:text-brand-orange transition-colors flex items-center gap-4"
                 >
-                  <ClockAlert width={18} className="text-brand-orange" />
+                  <Clock width={18} className="text-brand-orange" />
                   Senin - Sabtu (08:00 - 17:00)
                 </a>
               </li>
