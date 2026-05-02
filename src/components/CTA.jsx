@@ -43,7 +43,7 @@ const CTA = () => {
 
         <div className="relative z-10 flex flex-col sm:flex-row gap-4">
           <a
-            href="https://wa.link/gw6rq9"
+            href="https://wa.link/p4y2sp"
             className="active:scale-95 transition-all duration-300 ease-in-out group px-6 py-3 bg-white text-pink-600 font-semibold rounded-lg shadow hover:bg-gray-50 flex items-center justify-center gap-2"
           >
             Konsultasi Gratis{" "}
@@ -53,7 +53,7 @@ const CTA = () => {
           </a>
 
           <a
-            href="https://wa.link/gw6rq9"
+            href="#services"
             className="active:scale-95 transition-all duration-300 ease-in-out px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10"
           >
             Mulai Sekarang

@@ -59,6 +59,15 @@ const Services = ({ isDarkMode }) => {
     },
   ];
 
+  function textMessage(paket) {
+    const adminName = "EnvTeh";
+    const phoneNumber = "62895363616395";
+    const message = `Halo kak ${adminName}\n\nSaya izin menanyakan lebih jauh tentang paket ${paket}`;
+    const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    return waLink;
+  }
+
   return (
     <section
       id="services"
@@ -79,13 +88,6 @@ const Services = ({ isDarkMode }) => {
             .
           </motion.h2>
         </div>
-
-        {/* <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          className="w-24 h-1 bg-linear-to-r from-brand-orange to-brand-magenta mx-auto rounded-full"
-        /> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {pricingPlans.map((plan, i) => (
@@ -143,18 +145,8 @@ const Services = ({ isDarkMode }) => {
                 ))}
               </ul>
 
-              {/* <a
-                href="#"
-                className={`mt-auto w-full py-3 px-6 rounded-xl font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer ${
-                  plan.recommended
-                    ? "bg-linear-to-r from-brand-orange to-brand-magenta text-white hover:opacity-90 active:scale-95"
-                    : "border border-brand-magenta text-brand-magenta hover:bg-brand-magenta hover:text-white active:scale-95"
-                }`}
-              >
-                Pilih Paket
-              </a> */}
               <LinkButton
-                href="https://wa.link/gw6rq9"
+                href={textMessage(plan.name)}
                 classone="mt-auto w-full bg-transparent bg-linear-to-r from-brand-orange to-brand-magenta hover:opacity-70"
                 classtwo={`${plan.recommended ? "bg-linear-to-r from-brand-orange to-brand-magenta text-white" : ""} ${isDarkMode ? "bg-brand-charcoal/50" : "bg-brand-light-gray"} transition-all duration-300 ease-out`}
                 padding="py-3 px-6"

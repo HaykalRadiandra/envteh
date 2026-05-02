@@ -61,7 +61,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <LinkButton href="#cta" padding={`px-14 py-2 text-white`} />
+          <LinkButton href="#services" padding={`px-14 py-2 text-white`} />
         </div>
 
         {/* Mobile Toggle */}
@@ -99,7 +99,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
                 </a>
               ))}
               <a
-                href="#cta"
+                href="#services"
                 onClick={() => setIsOpen(false)}
                 className="bg-brand-orange text-white px-6 py-3 rounded-xl font-bold text-center"
               >

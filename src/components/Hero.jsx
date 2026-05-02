@@ -33,7 +33,7 @@ const Hero = ({ isDarkMode }) => {
           </p>
           <div className="flex flex-wrap gap-4 text-center">
             <LinkButton
-              href="https://wa.link/gw6rq9"
+              href="https://wa.link/p4y2sp"
               classtwo="gap-2 font-bold text-lg group"
               padding="py-3 px-10 text-white"
             >
@@ -43,12 +43,12 @@ const Hero = ({ isDarkMode }) => {
               </span>
             </LinkButton>
             <LinkButton
-              href="#services"
+              href="#solution"
               classone={`bg-transparent border-2 ${isDarkMode ? "text-white border-white" : "text-brand-charcoal border-brand-charcoal"} hover:scale-105 active:scale-95`}
               classtwo="gap-2 font-bold text-lg bg-transparent"
               padding="py-3 px-10"
             >
-              Lihat Paket{" "}
+              Lihat Layanan{" "}
             </LinkButton>
           </div>
           <div className="grid grid-cols-3 mt-16 mb-10">
