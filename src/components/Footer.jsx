@@ -1,4 +1,13 @@
-import { Building, Clock, ClockAlert, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Building,
+  Clock,
+  Clock10,
+  Clock9,
+  ClockAlert,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const socials = [
@@ -57,9 +66,9 @@ const Footer = ({ isDarkMode }) => {
             <p
               className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg max-w-sm mb-8`}
             >
-              Memimpin dalam pengembangan perangkat lunak kustom dan
-              transformasi digital. Membangun perangkat lunak berkualitas sejak
-              2024.
+              Pengembangan website dan solusi digital untuk membantu pertumbuhan
+              bisnis tampil lebih profesional, efektif dan relevan di era
+              digital.
             </p>
             <div className="flex gap-4">
               {socials.map((social, index) => (
@@ -180,8 +189,8 @@ const Footer = ({ isDarkMode }) => {
                   href="#"
                   className="hover:text-brand-orange transition-colors flex items-center gap-4"
                 >
-                  <Clock width={18} className="text-brand-orange" />
-                  Senin - Sabtu (08:00 - 17:00)
+                  <Clock9 width={18} className="text-brand-orange" />
+                  Senin - Jumat (09:00 - 17:00)
                 </a>
               </li>
               <li>
@@ -189,8 +198,8 @@ const Footer = ({ isDarkMode }) => {
                   href="#"
                   className="hover:text-brand-orange transition-colors flex items-center gap-4"
                 >
-                  <ClockAlert width={18} className="text-brand-orange" />
-                  Minggu (Libur)
+                  <Clock10 width={18} className="text-brand-orange" />
+                  Sabtu - Minggu (10.00-17.00)
                 </a>
               </li>
             </ul>

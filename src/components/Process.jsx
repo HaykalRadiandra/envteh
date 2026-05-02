@@ -179,8 +179,40 @@ const Process = ({ isDarkMode }) => {
             </div>
           </motion.div>
 
-          {/* Testimoni Carousel */}
           <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className={`p-10 rounded-4xl ${isDarkMode ? "bg-white/5 border border-white/10" : "bg-gray-50/50 border border-gray-100"} flex flex-col`}
+          >
+            <h3 className="text-2xl font-bold mb-10 text-center lg:text-left">
+              Testimoni
+            </h3>
+            <div className="relative grow flex flex-col justify-center overflow-hidden min-h-62.5">
+              <div className="absolute top-0 left-0">
+                <Quote className="w-12 h-12 text-red-500 opacity-20 transform scale-x-[-1]" />
+              </div>
+              <div className="relative z-10 py-4">
+                <p
+                  className={`text-xl font-medium leading-relaxed mb-8 ${isDarkMode ? "text-gray-200" : "text-gray-700"}`}
+                >
+                  Saat ini belum ada testimoni
+                </p>
+                <p className="text-lg font-bold">
+                  <span
+                    className={`${isDarkMode ? "text-gray-400" : "text-gray-500"} font-normal`}
+                  >
+                    -{" "}
+                  </span>
+                  Segera
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Testimoni Carousel */}
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -229,10 +261,10 @@ const Process = ({ isDarkMode }) => {
                   </motion.div>
                 </AnimatePresence>
               </div>
-            </div>
+            </div> */}
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center gap-3 mt-10">
+          {/* Pagination Dots */}
+          {/* <div className="flex justify-center gap-3 mt-10">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
@@ -246,7 +278,7 @@ const Process = ({ isDarkMode }) => {
                 />
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
