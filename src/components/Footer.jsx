@@ -11,9 +11,21 @@ import {
 import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const socials = [
-  { title: "Tiktok", icon: <FaTiktok />, url: "#" },
-  { title: "Instagram", icon: <FaInstagram />, url: "#" },
-  { title: "Youtube", icon: <FaYoutube />, url: "#" },
+  {
+    title: "Tiktok",
+    icon: <FaTiktok />,
+    url: "https://www.tiktok.com/@envteh.group",
+  },
+  {
+    title: "Instagram",
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/envteh.group/",
+  },
+  {
+    title: "Youtube",
+    icon: <FaYoutube />,
+    url: "https://www.youtube.com/@EnvTehGroup",
+  },
 ];
 
 const Footer = ({ isDarkMode }) => {
