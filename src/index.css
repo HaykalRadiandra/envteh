@@ -9,6 +9,18 @@
   --color-brand-light-gray: #f2f2f2;
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Jarak naiknya, bisa disesuaikan */
+    }
+  }
 }
 
 @layer base {

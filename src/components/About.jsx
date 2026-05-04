@@ -5,6 +5,7 @@ import {
   animate,
   useInView,
 } from "framer-motion";
+import logoAbout from "../assets/about.jpeg";
 import { useEffect, useRef } from "react";
 
 const Counter = ({ target, className }) => {
@@ -42,7 +43,7 @@ const About = ({ isDarkMode }) => {
         >
           <div className="aspect-3/2 bg-brand-light-gray rounded-3xl overflow-hidden shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              src={logoAbout}
               alt="Team working"
               className="w-full h-full object-cover"
             />

@@ -109,8 +109,8 @@ const Portfolio = ({ isDarkMode }) => {
             <p
               className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-xl`}
             >
-              Kami bangga dapat menghadirkan produk digital yang luar biasa bagi
-              klien kami.
+              Berikut adalah deretan karya dan solusi digital terbaik yang telah
+              kami ciptakan di dalam portofolio kami.
             </p>
           </div>
           <button className="text-brand-magenta font-bold flex items-center gap-2 active:translate-x-2 hover:translate-x-2 transition-transform cursor-pointer">
@@ -224,100 +224,104 @@ const Portfolio = ({ isDarkMode }) => {
               </button>
 
               {/* Modal Content - Scrollable */}
-              <div className={`w-full overflow-y-auto max-md:scrollbar-hide
-                ${isDarkMode ? "md:scrollbar-thin md:scrollbar-thumb-brand-orange md:scrollbar-track-brand-charcoal" : "md:scrollbar-thin md:scrollbar-thumb-brand-orange md:scrollbar-track-brand-light-gray"}`}>
-                
+              <div
+                className={`w-full overflow-y-auto max-md:scrollbar-hide
+                ${isDarkMode ? "md:scrollbar-thin md:scrollbar-thumb-brand-orange md:scrollbar-track-brand-charcoal" : "md:scrollbar-thin md:scrollbar-thumb-brand-orange md:scrollbar-track-brand-light-gray"}`}
+              >
                 {/* Modal Header Image */}
                 <div className="relative h-70 w-full">
                   <img
                     src={selectedProject.img}
                     alt={selectedProject.title}
-                  className="w-full h-full object-cover"
-                />
-                <div
-                  className={`absolute inset-0 bg-linear-to-t ${isDarkMode ? "from-[#18181b] via-[#18181b]/60 to-transparent/20" : "from-white via-white/60 to-transparent/20"}`}
-                />
+                    className="w-full h-full object-cover"
+                  />
+                  <div
+                    className={`absolute inset-0 bg-linear-to-t ${isDarkMode ? "from-[#18181b] via-[#18181b]/60 to-transparent/20" : "from-white via-white/60 to-transparent/20"}`}
+                  />
 
-                <div className="absolute bottom-6 left-8 right-8">
-                  <span
-                    className={`inline-block px-4 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border mb-4 backdrop-blur-md
+                  <div className="absolute bottom-6 left-8 right-8">
+                    <span
+                      className={`inline-block px-4 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border mb-4 backdrop-blur-md
                     ${isDarkMode ? "border-white/20 text-white bg-white/10" : "border-black/20 text-gray-800 bg-white/50"}`}
-                  >
-                    {selectedProject.category}
-                  </span>
-                  <h2 className="text-4xl md:text-5xl font-bold">
-                    {selectedProject.title}
-                  </h2>
+                    >
+                      {selectedProject.category}
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-bold">
+                      {selectedProject.title}
+                    </h2>
+                  </div>
                 </div>
-              </div>
 
-              {/* Modal Content */}
-              <div className="p-8">
-                <div className="grid md:grid-cols-2 gap-10">
-                  {/* Left Column */}
-                  <div className="space-y-8">
-                    {/* Overview */}
-                    <section>
-                      <div className="flex items-center gap-3 mb-4">
-                        <Layers className="text-brand-orange" size={24} />
-                        <h3 className="text-2xl font-bold">Overview</h3>
-                      </div>
-                      <p
-                        className={`leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
-                      >
-                        {selectedProject.overview}
-                      </p>
-                    </section>
+                {/* Modal Content */}
+                <div className="p-8">
+                  <div className="grid md:grid-cols-2 gap-10">
+                    {/* Left Column */}
+                    <div className="space-y-8">
+                      {/* Overview */}
+                      <section>
+                        <div className="flex items-center gap-3 mb-4">
+                          <Layers className="text-brand-orange" size={24} />
+                          <h3 className="text-2xl font-bold">Overview</h3>
+                        </div>
+                        <p
+                          className={`leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                        >
+                          {selectedProject.overview}
+                        </p>
+                      </section>
 
-                    {/* Key Features */}
-                    <section>
-                      <div className="flex items-center gap-3 mb-4">
-                        <CheckCircle className="text-brand-orange" size={24} />
-                        <h3 className="text-2xl font-bold">Key Features</h3>
-                      </div>
-                      <ul className="space-y-3">
-                        {selectedProject.keyFeatures.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
-                            <div className="w-2 h-2 rounded-full bg-brand-orange mt-2 shrink-0" />
+                      {/* Key Features */}
+                      <section>
+                        <div className="flex items-center gap-3 mb-4">
+                          <CheckCircle
+                            className="text-brand-orange"
+                            size={24}
+                          />
+                          <h3 className="text-2xl font-bold">Key Features</h3>
+                        </div>
+                        <ul className="space-y-3">
+                          {selectedProject.keyFeatures.map((feature, idx) => (
+                            <li key={idx} className="flex items-start gap-3">
+                              <div className="w-2 h-2 rounded-full bg-brand-orange mt-2 shrink-0" />
+                              <span
+                                className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                              >
+                                {feature}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="space-y-8">
+                      {/* Tech Stack */}
+                      <section>
+                        <div className="flex items-center gap-3 mb-4">
+                          <Code className="text-brand-orange" size={24} />
+                          <h3 className="text-2xl font-bold">Tech Stack</h3>
+                        </div>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {selectedProject.techStack.map((tech, idx) => (
                             <span
-                              className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
-                            >
-                              {feature}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </section>
-                  </div>
-
-                  {/* Right Column */}
-                  <div className="space-y-8">
-                    {/* Tech Stack */}
-                    <section>
-                      <div className="flex items-center gap-3 mb-4">
-                        <Code className="text-brand-orange" size={24} />
-                        <h3 className="text-2xl font-bold">Tech Stack</h3>
-                      </div>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {selectedProject.techStack.map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className={`px-4 py-2 text-sm font-medium rounded-xl border
+                              key={idx}
+                              className={`px-4 py-2 text-sm font-medium rounded-xl border
                             ${isDarkMode ? "bg-[#222225] border-white/10 text-gray-200" : "bg-gray-50 border-gray-200 text-gray-700 shadow-sm"}`}
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                      <p
-                        className={`text-sm font-medium ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}
-                      >
-                        {selectedProject.fullStackText}
-                      </p>
-                    </section>
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                        <p
+                          className={`text-sm font-medium ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}
+                        >
+                          {selectedProject.fullStackText}
+                        </p>
+                      </section>
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
             </motion.div>
           </motion.div>

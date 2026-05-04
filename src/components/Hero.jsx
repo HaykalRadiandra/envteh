@@ -80,8 +80,10 @@ const Hero = ({ isDarkMode }) => {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative"
         >
-          <div className="bg-linear-to-br from-brand-orange to-brand-magenta p-1 rounded-3xl rotate-3 shadow-2xl lg:mt-4">
-            <div className="bg-white dark:bg-brand-charcoal rounded-[22px] p-4 -rotate-3 overflow-hidden">
+          <div className="bg-linear-to-br from-brand-orange to-brand-magenta p-1 rounded-3xl rotate-3 shadow-2xl lg:mt-4 animate-float">
+            <div
+              className={`${isDarkMode ? "bg-white" : "bg-brand-charcoal"} rounded-[22px] p-4 -rotate-3 overflow-hidden`}
+            >
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
                 alt="Software Development"
@@ -95,7 +97,7 @@ const Hero = ({ isDarkMode }) => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1 }}
-            className={`absolute -bottom-8 left-1 sm:-bottom-6 sm:-left-6 p-4 rounded-2xl shadow-xl border ${isDarkMode ? "dark:bg-brand-charcoal border-gray-800" : "bg-brand-light-gray border-gray-100"}`}
+            className={`absolute -bottom-8 left-1 sm:-bottom-6 sm:-left-6 p-4 rounded-2xl shadow-xl border ${isDarkMode ? "dark:bg-brand-charcoal border-gray-800" : "bg-brand-light-gray border-gray-100"} animate-float`}
           >
             <div className="flex items-center gap-3">
               <div
