@@ -20,6 +20,7 @@ const Hero = ({ isDarkMode }) => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="h-full flex flex-col justify-center"
         >
           <h1 className="text-5xl font-extrabold leading-tight mb-6">
             Website Simple,{" "}
@@ -36,7 +37,7 @@ const Hero = ({ isDarkMode }) => {
             <LinkButton
               href="https://wa.link/p4y2sp"
               classtwo="gap-2 font-bold text-lg group"
-              padding="py-3 px-10 text-white"
+              padding="py-3 px-2 lg:px-8 text-white"
             >
               Konsultasi Gratis{" "}
               <span className="group-hover:translate-x-2 transition-transform duration-300 ease-out">
@@ -47,7 +48,7 @@ const Hero = ({ isDarkMode }) => {
               href="#solution"
               classone={`bg-transparent border-2 ${isDarkMode ? "text-white border-white" : "text-brand-charcoal border-brand-charcoal"} hover:scale-105 active:scale-95`}
               classtwo="gap-2 font-bold text-lg bg-transparent"
-              padding="py-3 px-10"
+              padding="py-3 px-2 md:px-8"
             >
               Lihat Layanan{" "}
             </LinkButton>

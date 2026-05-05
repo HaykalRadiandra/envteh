@@ -7,20 +7,52 @@ const FAQ = ({ isDarkMode }) => {
 
   const faqs = [
     {
-      q: "Berapa lama biasanya sebuah proyek diselesaikan?",
-      a: "Waktu pengerjaan proyek bervariasi tergantung pada tingkat kerumitannya. Sebuah landing page sederhana bisa memakan waktu 2-4 minggu, sementara platform perusahaan yang kompleks bisa memakan waktu 3-6 bulan.",
+      q: "Berapa lama pengerjaan website?",
+      a: "Tergantung paket dan kebutuhan, biasanya 2–7 hari untuk website sederhana.",
     },
     {
-      q: "Teknologi apa saja yang menjadi keahlian Anda?",
-      a: "Kami berspesialisasi dalam teknologi web dan mobile modern, termasuk React, Next.js, Node.js, Flutter, dan infrastruktur Cloud (AWS/GCP).",
+      q: "Berapa biaya pembuatan website?",
+      a: "Menyesuaikan kebutuhan, tersedia beberapa paket mulai dari basic hingga custom.",
     },
     {
-      q: "Apakah Anda menyediakan layanan dukungan pasca-peluncuran?",
-      a: "Ya, kami menyediakan berbagai paket pemeliharaan (maintenance) dan dukungan untuk memastikan perangkat lunak Anda tetap mutakhir dan aman.",
+      q: "Apakah ada revisi?",
+      a: "Tersedia revisi sesuai paket, dan kami memastikan hasil sesuai kebutuhan client.",
     },
     {
-      q: "Dapatkah Anda bekerja sama dengan tim kami yang sudah ada?",
-      a: "Tentu saja. Kami sering kali bergabung dengan tim yang sudah ada untuk memberikan keahlian khusus atau mempercepat siklus pengembangan.",
+      q: "Apakah ada sistem pembayaran DP?",
+      a: "Ya, pembayaran dilakukan dengan sistem DP di awal dan pelunasan setelah selesai.",
+    },
+    {
+      q: "Apakah saya perlu paham teknis?",
+      a: "Tidak, kami akan bantu dari awal hingga website siap digunakan.",
+    },
+    {
+      q: "Apakah bisa bekerja sama dengan tim kami?",
+      a: "Ya, kami dapat berkolaborasi dengan tim client seperti marketing, desain, atau IT untuk memastikan hasil sesuai kebutuhan dan tujuan bisnis.",
+    },
+    {
+      q: "Apakah website dan aset menjadi milik client?",
+      a: "Ya, website dan akses akan diserahkan sepenuhnya kepada client setelah project selesai.",
+    },
+    {
+      q: "Apakah source code bisa diserahkan?",
+      a: "Untuk project tertentu (custom), source code dapat diserahkan sesuai kesepakatan.",
+    },
+    {
+      q: "Apakah termasuk domain & hosting?",
+      a: "Tergantung paket, domain & hosting bisa disediakan atau menggunakan milik client.",
+    },
+    {
+      q: "Apakah ada maintenance setelah selesai?",
+      a: "Tersedia layanan maintenance opsional jika dibutuhkan.",
+    },
+    {
+      q: "Apakah website bisa dikembangkan ke depan?",
+      a: "Ya, website dapat dikembangkan sesuai kebutuhan. Untuk website berbasis template/web builder, pengembangan dapat dilakukan dengan batas tertentu, sedangkan untuk custom website lebih fleksibel untuk pengembangan jangka panjang.",
+    },
+    {
+      q: "Apakah desain bisa custom?",
+      a: "Tersedia opsi template maupun custom sesuai kebutuhan.",
     },
   ];
 
