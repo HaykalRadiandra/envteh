@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AlarmClock, BadgeCheck, ThumbsUp } from "lucide-react";
 import { LinkButton } from "./Elements/Button";
+import imageHero from "../assets/hero.jpeg";
 
 const Hero = ({ isDarkMode }) => {
   const trust = [
@@ -85,14 +86,13 @@ const Hero = ({ isDarkMode }) => {
               className={`${isDarkMode ? "bg-white" : "bg-brand-charcoal"} rounded-[22px] p-4 -rotate-3 overflow-hidden`}
             >
               <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
+                src={imageHero}
                 alt="Software Development"
                 className="rounded-xl w-full h-auto grayscale-0 hover:grayscale transition-all duration-700"
               />
             </div>
           </div>
 
-          {/* Stats Badge */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
