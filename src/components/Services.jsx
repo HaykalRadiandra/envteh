@@ -10,6 +10,7 @@ const Services = ({ isDarkMode }) => {
       price: "300.000 - 600.000",
       icon: <Rocket className="w-12 h-12" />,
       features: [
+        "Web Statis",
         "1 Halaman",
         "Desain Simple & Modern",
         "Mobile Friendly",
@@ -23,6 +24,7 @@ const Services = ({ isDarkMode }) => {
       price: "700.000 - 1.000.000",
       icon: <Zap className="w-12 h-12" />,
       features: [
+        "Web Statis",
         "1 - 3 Halaman",
         "Desain Custom",
         "Mobile Friendly",
@@ -36,6 +38,7 @@ const Services = ({ isDarkMode }) => {
       price: "1.000.000 - 3.000.000",
       icon: <BarChart3 className="w-12 h-12" />,
       features: [
+        "Web Dinamis / Statis",
         "3 - 5 Halaman",
         "Desain Custom Premium",
         "Mobile Friendly",
@@ -46,9 +49,10 @@ const Services = ({ isDarkMode }) => {
     {
       name: "PRO",
       subtitle: "Untuk bisnis profesional",
-      price: "3.000.000+",
+      price: "3.000.000 - 6.000.000",
       icon: <Crown className="w-12 h-12" />,
       features: [
+        "Web Dinamis",
         "5+ Halaman",
         "Desain Custom Premium",
         "Mobile Friendly",
