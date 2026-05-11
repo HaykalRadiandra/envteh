@@ -22,7 +22,7 @@ const Services = ({ isDarkMode }) => {
     },
     {
       name: "STANDARD",
-      subtitle: "Custom Template Web Statis",
+      subtitle: "Web Statis Custom Template",
       price: "600rb - 1jt",
       icon: <Zap className="w-12 h-12" />,
       features: [
@@ -37,11 +37,10 @@ const Services = ({ isDarkMode }) => {
     },
     {
       name: "PRO",
-      subtitle: "Full Custom Web Static",
+      subtitle: " Web Static Full Custom",
       price: "1.5jt - 3jt",
       icon: <BarChart3 className="w-12 h-12" />,
       features: [
-        "Web Statis",
         "3 - 5 Halaman",
         "Desain Eksklusif 100% Request",
         "Transisi & Animasi",
@@ -53,7 +52,7 @@ const Services = ({ isDarkMode }) => {
     },
     {
       name: "ADVANCED",
-      subtitle: "Full Custom Web Dinamis",
+      subtitle: " Web Dinamis Full Custom",
       price: "4jt+",
       icon: <Crown className="w-12 h-12" />,
       features: [
