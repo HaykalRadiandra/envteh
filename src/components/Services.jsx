@@ -6,7 +6,7 @@ const Services = ({ isDarkMode }) => {
   const pricingPlans = [
     {
       name: "BASIC",
-      subtitle: "Web Statis Menggunakan Web Builder",
+      subtitle: "Web Statis Template",
       price: "300rb - 500rb",
       icon: <Rocket cl assName="w-12 h-12" />,
       features: [

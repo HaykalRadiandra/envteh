@@ -19,79 +19,94 @@ const Portfolio = ({ isDarkMode }) => {
 
   const projects = [
     {
-      title: "Rekaloka",
-      category: "Mobile & Web",
-      img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
-      briefOverview:
-        "Platform eksplorasi budaya dengan GenAI (Text-to-3D) & Computer Vision.",
-      overview:
-        "Rekaloka adalah platform inovatif yang menggabungkan kecerdasan buatan dengan pelestarian budaya. Memungkinkan pengguna untuk mengubah teks menjadi model 3D artefak budaya secara interaktif.",
-      keyFeatures: [
-        "GenAI Text-to-3D Generation untuk artefak budaya",
-        "Computer Vision untuk analisis gambar",
-        "Interactive 3D viewer di dalam aplikasi web dan mobile",
-        "Sistem manajemen konten untuk kurator budaya",
-      ],
-      techStack: [
-        "Node.js",
-        "Express",
-        "Prisma",
-        "React Native",
-        "Three.js",
-        "Python",
-        "TensorFlow",
-      ],
-      fullStackText:
-        "Full Stack: Node.js, Express, Prisma, React Native, Three.js, Python, TensorFlow",
-    },
-    {
-      title: "Supplier System",
+      title: "Luhur Resto",
       category: "Web",
-      img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+      img: "luhur-resto.png",
       briefOverview:
-        "Sistem manajemen stok & produksi dengan RBAC ketat untuk separasi akses dapur & admin.",
+        "Website landing page restoran Indonesia dengan tampilan elegan dan pengalaman reservasi modern.",
+
       overview:
-        "Supplier Management System adalah platform web full-stack untuk mendigitalisasi alur kerja bisnis supplier. Sistem ini menciptakan batasan kerja yang jelas (separation of concerns) antara tim produksi dan manajemen keuangan.",
+        "Luhur Resto merupakan website landing page untuk restoran khas Indonesia yang dirancang untuk menampilkan identitas brand, menu unggulan, suasana restoran, serta memudahkan pelanggan melakukan reservasi dan eksplorasi menu secara digital.",
+
       keyFeatures: [
-        "Multi-Role Authentication (RBAC): Super Admin (God Mode) vs Staff Produksi (Limited Access)",
-        "Dashboard User-Specific: Tampilan berbeda untuk Admin & Dapur",
-        "Smart Seeder: Generate akun otomatis tanpa duplikat",
+        "Hero section dengan visual makanan premium",
+        "Menu showcase dan kategori makanan",
+        "Section reservasi meja",
+        "Responsive design untuk mobile dan desktop",
       ],
-      techStack: ["Laravel", "Filament", "MySQL", "Tailwind", "Alpine.js"],
-      fullStackText: "Full Stack: Laravel, FilamentPHP, MySQL, Tailwind CSS",
+
+      techStack: ["React JS", "Tailwind CSS"],
+
+      fullStackText: "Frontend Stack: React JS, Tailwind CSS",
     },
+
     {
-      title: "Fintech App",
-      category: "Mobile Dev",
-      img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
-      briefOverview: "Aplikasi keuangan personal dengan analitik cerdas.",
+      title: "Pawon Mataram",
+      category: "Web",
+      img: "pawon-mataram.png",
+
+      briefOverview:
+        "Website restoran tradisional Jawa dengan pengalaman visual yang hangat dan autentik.",
+
       overview:
-        "Platform keuangan komprehensif yang membantu pengguna melacak pengeluaran, mengatur anggaran, dan berinvestasi dengan panduan analitik cerdas berbasis AI.",
+        "Pawon Mataram adalah website landing page yang menampilkan konsep kuliner tradisional Indonesia dengan desain modern. Fokus utama pada pengalaman pengguna untuk melihat menu, cerita brand, serta informasi lokasi restoran.",
+
       keyFeatures: [
-        "Tracking pengeluaran otomatis",
-        "Sistem budgeting pintar",
-        "Integrasi dengan berbagai bank",
-        "Laporan analitik bulanan",
+        "Landing page dengan nuansa tradisional modern",
+        "Galeri makanan dan suasana restoran",
+        "Menu section interaktif",
+        "Navigasi smooth dan mobile friendly",
       ],
-      techStack: ["Flutter", "Go", "PostgreSQL", "Redis", "Docker"],
-      fullStackText: "Full Stack: Flutter, Golang, PostgreSQL, Redis, Docker",
+
+      techStack: ["HTML", "CSS", "JavaScript"],
+
+      fullStackText: "Frontend Stack: HTML, CSS, JavaScript",
     },
+
     {
-      title: "SaaS CRM",
-      category: "Cloud Dev",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-      briefOverview: "Platform CRM berbasis cloud untuk enterprise.",
+      title: "Rental PS",
+      category: "Web",
+      img: "rental-ps.png",
+
+      briefOverview:
+        "Website landing page penyewaan PlayStation dengan sistem informasi layanan dan paket bermain.",
+
       overview:
-        "Solusi CRM modern yang dirancang untuk meningkatkan produktivitas tim sales dengan otomatisasi alur kerja dan analitik real-time yang dapat diakses di mana saja.",
+        "Rental PS adalah website untuk mempromosikan layanan penyewaan PlayStation dengan informasi paket bermain, fasilitas tempat, harga, serta kemudahan pelanggan dalam melakukan reservasi.",
+
       keyFeatures: [
-        "Manajemen pipeline sales",
-        "Otomatisasi email marketing",
-        "Analitik & reporting real-time",
-        "Integrasi API pihak ketiga",
+        "Daftar paket rental dan harga",
+        "Informasi fasilitas gaming",
+        "CTA reservasi cepat",
+        "Desain modern bertema gaming",
       ],
-      techStack: ["React", "Node.js", "MongoDB", "AWS", "Docker", "GraphQL"],
-      fullStackText:
-        "Full Stack: React, Node.js, MongoDB, AWS, Docker, GraphQL",
+
+      techStack: ["React JS", "Tailwind CSS"],
+
+      fullStackText: "Frontend Stack: React JS, Tailwind CSS",
+    },
+
+    {
+      title: "Tourist Destination",
+      category: "Web",
+      img: "tourism.png",
+
+      briefOverview:
+        "Website destinasi wisata untuk eksplorasi tempat menarik dengan pengalaman visual modern.",
+
+      overview:
+        "Tourist Destination adalah website eksplorasi wisata yang membantu pengguna menemukan destinasi populer melalui tampilan visual menarik, informasi destinasi, serta pengalaman navigasi yang responsif.",
+
+      keyFeatures: [
+        "Showcase destinasi wisata populer",
+        "Section rekomendasi tempat wisata",
+        "Layout responsif dan modern",
+        "Animasi interaktif menggunakan Framer Motion",
+      ],
+
+      techStack: ["React JS", "Tailwind CSS", "Framer Motion"],
+
+      fullStackText: "Frontend Stack: React JS, Tailwind CSS, Framer Motion",
     },
   ];
 
