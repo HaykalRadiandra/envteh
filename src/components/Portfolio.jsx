@@ -119,7 +119,7 @@ const Portfolio = ({ isDarkMode }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Kisah Sukses <span className="text-brand-magenta">Kami</span>.
+              Explorasi Kerja <span className="text-brand-magenta">Kami</span>.
             </h2>
             <p
               className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-xl`}
